@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>invoice template</title>
+
+		<style>
+			.invoice-box {
+				max-width: 800px;
+				margin: auto;
+				padding: 30px;
+				border: 1px solid #eee;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+				font-size: 16px;
+				line-height: 24px;
+				font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+				color: #555;
+			}
+
+			.invoice-box table {
+				width: 100%;
+				line-height: inherit;
+				text-align: left;
+			}
+
+			.invoice-box table td {
+				padding: 5px;
+				vertical-align: top;
+			}
+
+			.invoice-box table tr td:nth-child(2) {
+				text-align: right;
+			}
+
+			.invoice-box table tr.top table td {
+				padding-bottom: 20px;
+			}
+
+			.invoice-box table tr.top table td.title {
+				font-size: 45px;
+				line-height: 45px;
+				color: #333;
+			}
+
+			.invoice-box table tr.information table td {
+				padding-bottom: 40px;
+			}
+
+			.invoice-box table tr.heading td {
+				background: #eee;
+				border-bottom: 1px solid #ddd;
+				font-weight: bold;
+			}
+
+			.invoice-box table tr.details td {
+				padding-bottom: 20px;
+			}
+
+			.invoice-box table tr.item td {
+				border-bottom: 1px solid #eee;
+			}
+
+			.invoice-box table tr.item.last td {
+				border-bottom: none;
+			}
+
+			.invoice-box table tr.total td:nth-child(2) {
+				border-top: 2px solid #eee;
+				font-weight: bold;
+			}
+			.divvv {
+				text-align: center;
+				line-height: 0;
+				padding-top: 40px;
+			}
+			.macdiv {
+				line-height: 0;
+				text-align: right;
+			
+			}
+			@media only screen and (max-width: 600px) {
+				.invoice-box table tr.top table td {
+					width: 100%;
+					display: block;
+					text-align: center;
+				}
+
+				.invoice-box table tr.information table td {
+					width: 100%;
+					display: block;
+					text-align: center;
+				}
+			}
+
+			/** RTL **/
+			.invoice-box.rtl {
+				direction: rtl;
+				font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+			}
+
+			.invoice-box.rtl table {
+				text-align: right;
+			}
+
+			.invoice-box.rtl table tr td:nth-child(2) {
+				text-align: left;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="invoice-box">
+			<table cellpadding="0" cellspacing="0">
+				<tr class="top">
+					<td colspan="2">
+						<table>
+							<tr>
+								
+						        <td>
+                                    <h2>Sparkinity</h2><br><br>
+                                    <b>BILLED TO:</b><br/>
+									VC<br />
+									+380912211232<br />
+									street,Cherkassy,Ukraine,18000<br />
+                                    Invoice no. 455-199<br />
+                                    01 February 2024<br />
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr class="information">
+					<td colspan="2">
+						<table>
+							<tr>
+								<td>
+                                    <b>PAYMENT INFORMATION:</b><br>
+									Please make the payment using a SEPA transfer:<br />
+									Bank Name : HSBC<br />
+                                    Beneficiary: hokodo Services<br />
+									Account no. : <xxx-xxx-xxxx></xxx-xxx-xxxx><br />
+                                    Sort Code : xx-xx-xx<br />
+									Payment reference:SPADP-P262K-6RN<br />
+								</td>
+
+				
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr class="heading">
+					<td>Item</td>
+
+					<td>Quantity</td>
+
+                    <td>Unit</td>
+                    <td>PriceTotal</td>
+				</tr>
+
+				<tr class="details">
+					<td>Toucan Scented</td>
+
+					<td>1</td>
+                    <td>$23</td>
+                    <td>$23</td>
+				</tr>
+
+				<tr class="heading">
+					<td></td>
+
+					<td>Price</td>
+                    <td>Subtotal</td>
+                    <td>$23</td>
+				</tr>
+                <tr class="details">
+					<td></td>
+
+					<td></td>
+                    <td>Shipping</td>
+                    <td>$3.22</td>
+				</tr>
+
+				<tr class="heading">
+					<td></td>
+
+					<td></td>
+                    <td><h2>Total</h2></td>
+                    <td><h2>$31.22</h2></td>
+				</tr>
+
+					<!-- <tr class="information2">
+						<td>
+							<table>
+								<tr>
+									<td>
+										<b>MAC</b><br>
+										123<br />
+										Thank You!<br />
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr> -->
+                
+			</table>
+			<div class="macdiv">
+				<p>MAC</p><br>
+				<p>123</p><br>
+				<p>Thank You!</p>
+			</div>
+			<div class="divvv">
+				<p>Hokado is Sparkinity payments and is authorized to collect payments on its behalf.</p><br>
+				<p>Pleasure ensure that you make payment to Hokado and not to Sparkinity.</p>
+			</div>
+			
+		</div>
+	</body>
+</html>
