@@ -3,8 +3,12 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>invoice template</title>
-
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet"> -->
 		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 			.invoice-box {
 				max-width: 800px;
 				margin: auto;
@@ -13,7 +17,11 @@
 				box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 				font-size: 16px;
 				line-height: 24px;
-				font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+				font-family: "Outfit", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                 font-style: normal;
+				/* font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; */
 				color: #555;
 			}
 
@@ -70,11 +78,20 @@
 			}
 			.divvv {
 				text-align: center;
-				line-height: 0;
+				line-height: 16px;
+				letter-spacing: -1px;
+				font-family: "Outfit", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
 				padding-top: 40px;
 			}
 			.macdiv {
 				line-height: 0;
+				font-family: "Outfit", sans-serif;
+              font-optical-sizing: auto;
+              font-weight: 400;
+               font-style: normal;
 				text-align: right;
 			
 			}
@@ -95,7 +112,11 @@
 			/** RTL **/
 			.invoice-box.rtl {
 				direction: rtl;
-				font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+				font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+				/* font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; */
 			}
 
 			.invoice-box.rtl table {
@@ -149,7 +170,6 @@
 						</table>
 					</td>
 				</tr>
-
 				<tr class="heading">
 					<td>Item</td>
 
@@ -158,13 +178,13 @@
                     <td>Unit</td>
                     <td>PriceTotal</td>
 				</tr>
-
+				
 				<tr class="details">
 					<td>Toucan Scented</td>
 
 					<td>1</td>
-                    <td>$23</td>
-                    <td>$23</td>
+                    <td>£23</td>
+                    <td>£23</td>
 				</tr>
 
 				<tr class="heading">
@@ -172,22 +192,22 @@
 
 					<td>Price</td>
                     <td>Subtotal</td>
-                    <td>$23</td>
+                    <td>£23</td>
 				</tr>
                 <tr class="details">
 					<td></td>
 
 					<td></td>
                     <td>Shipping</td>
-                    <td>$3.22</td>
+                    <td>£3.22</td>
 				</tr>
 
 				<tr class="heading">
 					<td></td>
 
 					<td></td>
-                    <td><h2>Total</h2></td>
-                    <td><h2>$31.22</h2></td>
+                    <td><h1>Total</h1></td>
+                    <td><h1>£31.22</h1></td>
 				</tr>
 
 					<!-- <tr class="information2">
@@ -206,13 +226,13 @@
                 
 			</table>
 			<div class="macdiv">
-				<p>MAC</p><br>
+				<p><b>MAC</b></p><br>
 				<p>123</p><br>
 				<p>Thank You!</p>
 			</div>
 			<div class="divvv">
-				<p>Hokado is Sparkinity payments and is authorized to collect payments on its behalf.</p><br>
-				<p>Pleasure ensure that you make payment to Hokado and not to Sparkinity.</p>
+				<p>Hokado is Sparkinity payments and is authorized to collect payments on its behalf.<br>
+					Pleasure ensure that you make payment to Hokado and not to Sparkinity.</p>
 			</div>
 			
 		</div>
